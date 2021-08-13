@@ -14,5 +14,8 @@
 //Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
+Route::get('/', function () {
+    return view('welcome');
+});
 //Featured MenuHead
 Route::get('menuhead', 'MenuheadController@index')->name('menuhead');
